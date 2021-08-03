@@ -1,0 +1,147 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hide{
+    display: none;
+}
+.main2{
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2;
+    margin-top: -50px;
+}
+.main2 .tiles{
+    display: flex;
+}
+@media (max-width:580px) {
+    .main2 .tiles{
+        flex-direction: column;
+    }
+}
+.main2  .info{
+    padding:15px 28px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    margin: 10px;
+}
+.goback{
+    margin-top: 20px;
+    padding:5px 25px;  
+    border: 1px solid yellow;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hov:hover{
+    color:#f2f2f2 ;
+    border: 1px solid #f2f2f2;
+}
+.closeList{
+    color: #f2f2f2;
+    font-size: 18px;
+    margin: auto;
+    padding: 8px;
+    border-right: 2px solid #f2f2f2;
+    /* display: none; */
+}
+.logo > img{
+    width: 200px;
+    margin-bottom: 23px;
+}
+.searchTab{
+    background-color: #2d2f30;
+    display: flex;
+    flex-direction: column;
+    padding:10px 18px;    
+    border-radius: 18px;
+}
+.searchbar{
+    display: flex;
+    width: 400px;
+}
+.searchTab img{
+    width: 18px;
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 10px;
+}
+.searchTab input{
+    flex: 1;
+    background-color: transparent;
+    font-size: 18px;
+    border: none;
+    color: #f2f2f2;
+}
+.searchTab input:focus{
+    outline: none;
+}
+.show{
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.show::-webkit-scrollbar{
+    width: 4px;
+    background-color: #414344a9;
+
+    margin-left: 10px;
+}
+.show::-webkit-scrollbar-thumb{
+    background-color: #f2f2f26b;
+
+    border-radius: 20px;
+}
+.toggle{
+    display: none;
+}
+.closeList{
+    cursor: pointer;
+}
+.showList{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    color: #f2f2f2;
+}
+.birthyear,.gender{
+    font-size: 12px;
+    color: #f2f2f26b;
+}
+.showList:hover{
+    color: yellow;
+    cursor: pointer;
+}
+.noResult{
+    color: #eee;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+    z-index: -2;
+}
+
+.sound{
+    position: absolute;
+    top: 2%;
+    right: 2%;   
+    background-color: yellow;
+    border-radius:30px 10px;
+    cursor: pointer;
+}
+.sound img{
+    width: 50px;
+    padding: 5px;
+}
+.sound:active{
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+}
