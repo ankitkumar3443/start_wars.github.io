@@ -17,7 +17,7 @@ function torthler() {
   timerId = setTimeout(() => {
     fetcher(inputSearch.value);
     timerId = null;
-  }, 2000);
+  }, 900);
 }
 async function fetcher(val) {
   noResult.style.display = "none";
