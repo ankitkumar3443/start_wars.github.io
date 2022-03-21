@@ -9,6 +9,8 @@ We can implement debounce in JavaScript using the steps given below:
    - Reset the timer if the specified function is invoked again
    - Call the debounce function only when timeout.
 
+<img src="https://i.ibb.co/2M0SJdV/starWars.png" alt="Star Wars app" />
+
 Tech Stacks: Html, CSS, JS
 
 
